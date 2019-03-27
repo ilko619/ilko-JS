@@ -1,0 +1,47 @@
+<html>
+
+<head></head>
+
+<body>
+
+    USD :<input id='dollars'>
+    BGN:<input id='result'>
+    <input type="button" value="Click to make the exchange" onclick="exchange()">
+
+
+
+    <script>
+        //This function does not return a value.
+        function Ilko() {
+            alert('this is my first ever function');
+        }
+
+        //This function will return a string.
+        function Ivan() {
+            return "this is a returned statement";
+        }
+        //This function will return the value of its single parameter.
+        function para(p) {
+            return p;
+        }
+
+        function exchange() {
+            var EurAmount = document.getElementById('dollars').value * 1.73758927;
+            document.getElementById('result').value = EurAmount;
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
