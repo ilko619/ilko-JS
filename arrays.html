@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var logos =["Volvo","Audi","BMW","Ne e tri"];
+
+console.log(logos.length);
+
+// Access to each member element of the array is done usign its index (0, 1, 2, etc.)
+console.log(logos[0]);
+
+// Iteration over the array and using anonymous function
+logos.forEach(function(val){
+    if (val.length <= 4) {
+        console.log(val + " " + val.length);
+    }
+});
+
+// Changing array element value
+logos[0] = "Mercedes";
+logos[logos.length - 1] //the value of the last element
+
+console.log(logos[0]);
+
+// Adding Array Elements
+logos.push("Lada", "Moskvich", "Trabant");
+
+// Another way to add new element
+logos[logos.length] = "New element";
+
+//!!!!!! How to recognise an array
+Array.isArray(logos);   // returns true 
+
+// Converting Arrays to Strings using .join()
+var newStr = logos.join(" .:. ");
+
+// And the other way around - split a string by delimiter and into array 
+var newArr = s.split(" .:. ");
+
+// Remove or 'pop' the last element of an array
+// pop() returns the value
+logos.pop();
+
+//Removes the first elemnt from an array and returns the value.
+logos.shift()
+
+//Adds an element at the beginning of the array.Also returns the new length of the new array.
+logos.unshift("Mini Cooper");
+//Addva i maha tolkova kolkoto dadem v 2rarta chast.
+fruits.splice(2, 0, "Lemon", "Kiwi");
+
+</script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
