@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
 
@@ -16,55 +17,97 @@
 
 
 
-<script>
-var logos =["Volvo","Audi","BMW","Ne e tri"];
+    <script>
+        var logos = ["Volvo", "Audi", "BMW", "Ne e tri"];
 
-console.log(logos.length);
+        console.log(logos.length);
 
-// Access to each member element of the array is done usign its index (0, 1, 2, etc.)
-console.log(logos[0]);
+        // Access to each member element of the array is done usign its index (0, 1, 2, etc.)
+        console.log(logos[0]);
 
-// Iteration over the array and using anonymous function
-logos.forEach(function(val){
-    if (val.length <= 4) {
-        console.log(val + " " + val.length);
-    }
-});
+        // Iteration over the array and using anonymous function
+        logos.forEach(function (val) {
+            if (val.length <= 4) {
+                console.log(val + " " + val.length);
+            }
+        });
 
-// Changing array element value
-logos[0] = "Mercedes";
-logos[logos.length - 1] //the value of the last element
+        // Changing array element value
+        logos[0] = "Mercedes";
+        logos[logos.length - 1] //the value of the last element
 
-console.log(logos[0]);
+        console.log(logos[0]);
 
-// Adding Array Elements
-logos.push("Lada", "Moskvich", "Trabant");
+        // Adding Array Elements
+        logos.push("Lada", "Moskvich", "Trabant");
 
-// Another way to add new element
-logos[logos.length] = "New element";
+        // Another way to add new element
+        logos[logos.length] = "New element";
 
-//!!!!!! How to recognise an array
-Array.isArray(logos);   // returns true 
+        //!!!!!! How to recognise an array
+        Array.isArray(logos);   // returns true 
 
-// Converting Arrays to Strings using .join()
-var newStr = logos.join(" .:. ");
+        // Converting Arrays to Strings using .join()
+        var newStr = logos.join(" .:. ");
 
-// And the other way around - split a string by delimiter and into array 
-var newArr = s.split(" .:. ");
+        // And the other way around - split a string by delimiter and into array 
+        var newArr = s.split(" .:. ");
 
-// Remove or 'pop' the last element of an array
-// pop() returns the value
-logos.pop();
+        // Remove or 'pop' the last element of an array
+        // pop() returns the value
+        logos.pop();
 
-//Removes the first elemnt from an array and returns the value.
-logos.shift()
+        //Removes the first elemnt from an array and returns the value.
+        logos.shift()
 
-//Adds an element at the beginning of the array.Also returns the new length of the new array.
-logos.unshift("Mini Cooper");
-//Addva i maha tolkova kolkoto dadem v 2rarta chast.
-fruits.splice(2, 0, "Lemon", "Kiwi");
+        //Adds an element at the beginning of the array.Also returns the new length of the new array.
+        logos.unshift("Mini Cooper");
+        //Addva i maha tolkova kolkoto dadem v 2rarta chast.
+        fruits.splice(2, 0, "Lemon", "Kiwi");
+        //sorts the numbers from lowest ti highest
+        var points = [3, 1, 2, 4];
+        points.sort(function (a, b) {
+            console.log("Comparing " + a + " and " + b);
+            return a - b;
+        });
+        //sorts the numbers from highest to lowest.
+        var points = [3, 1, 2, 4];
+        points.sort(function (a, b) {
+            console.log("Comparing " + a + " and " + b);
+            return b - a;
+        });
+        //Find the Highest (or Lowest) Array Value
+        var points = [40, 100, 1, 5, 25, 10];
+        points.sort(function (a, b) { return a - b });
+        // now points[0] contains the lowest value
+        // and points[points.length-1] contains the highest value 
 
-</script>
+        //Used to show the highest(max) and the lowest(min) number in an array.
+        Math.max.apply(null, points);
+        100
+        Math.min.apply(null, points);
+        1
+        //the shorter way.
+        Math.min(points);
+        Math.max(points);
+        //returns days left till Christmas
+        Math.floor((new Date("2019-12-25") - new Date()) / (1000 * 60 * 60 * 24 ))
+
+        Math.floor(1.9);
+        1
+        Math.round(1.3);
+        1
+        Math.ceil(1.2);
+        2
+
+
+
+        // Homework: ? 	ternary operator - learn how it works and give at least two examples (code!)
+
+
+
+
+    </script>
 
 
 
