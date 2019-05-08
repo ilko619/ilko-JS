@@ -91,7 +91,7 @@
         Math.min(points);
         Math.max(points);
         //returns days left till Christmas
-        Math.floor((new Date("2019-12-25") - new Date()) / (1000 * 60 * 60 * 24 ))
+        Math.floor((new Date("2019-12-25") - new Date()) / (1000 * 60 * 60 * 24))
 
         Math.floor(1.9);
         1
@@ -99,6 +99,23 @@
         1
         Math.ceil(1.2);
         2
+        //ways to get a number to the power of something  (stepenuvane)
+
+        3 * 3
+        //1 method 
+        9
+        3 ** 2
+        //2 method 
+        9
+        //3 method
+        Math.pow(3, 2)
+        9
+        //This method shows the number the are odd on the left and on the right it shows the same numbers but by the power of 3 
+        var nums = [1,2,3,4,5,6,7,8,9]
+        nums.forEach(function (el, idx, arr) {
+            if (el % 2 != 0)
+                console.log((el) + ' ' + el ** 3);
+        });
 
 
 
